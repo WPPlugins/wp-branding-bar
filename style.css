@@ -1,0 +1,54 @@
+/* WP Branding Bar
+------------------------------------------------------------ */
+#wpbb-branding-header-wrapper * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+#wpbb-branding-header-wrapper {
+  position: absolute;
+  left: 0px;
+  height: 33px;
+  width: 100%;
+  z-index: 999;
+}
+#wpbb-branding-header-wrapper .wpbb-branding-container {
+  height: 33px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  padding-left: 10px;
+  position: relative;
+  width: 100%;
+}
+
+#wpbb-branding-header-wrapper #wpbb-branding-inner {
+  background: #fff url('../../plugins/wp-branding-bar/images/default-background.png') repeat-x bottom; 
+  height: 100%;
+  padding-bottom: 0px;
+  padding-top: 7px;
+}
+
+#wpbb-branding-header-wrapper #wpbb-main-branding {
+  float: left;
+}
+
+#wpbb-branding-header-wrapper #wpbb-secondary-branding {
+  float: right; 
+  padding: 0px 20px 0px 0px;
+}
+.wpbb-header-spacer {
+  height: 40px;
+}
+
+
+@media only screen and (max-width: 560px) {
+
+  #wpbb-secondary-branding {
+    display: none;
+  }
+}
